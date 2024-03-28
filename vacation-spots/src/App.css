@@ -1,0 +1,152 @@
+.place--card--winter {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #79bde8;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.place--card--summer {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #7bbf6b;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.place--card--spring {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #eaed3e;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.place--card--fall {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  margin: 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #d17f5c;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.place--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+
+.logo {
+  margin: 20px 30px;
+  width: 70px;
+  margin-right: auto;
+}
+
+.header {
+  background-image: url("https://media.istockphoto.com/id/154208318/photo/pastel-sunset-over-the-ocean-in-a-cloudy-sky.jpg?s=612x612&w=0&k=20&c=TRU1mdgVRqTIuHgAy2BGNgPYnOPV6KuVbfvWEeY1ijs=");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar > a {
+  margin: 10px;
+  color: white;
+}
+
+.footer {
+  border-top: 2px solid lightgrey;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons > img {
+  width: 50px;
+  margin: 50px 20px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.tagline {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing > a {
+  margin-left: 5px;
+  font-style: italic;
+}
+
+.title-box {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.title-box > h1 {
+  font-size: 350%;
+}
+
+.title-box > h3 {
+  font-size: 150%;
+}

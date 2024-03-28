@@ -1,0 +1,7 @@
+.app {
+  margin: 50px 400px;
+}
+
+.app > form {
+  margin-top: 200px;
+}

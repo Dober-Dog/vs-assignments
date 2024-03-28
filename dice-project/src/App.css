@@ -1,0 +1,32 @@
+.dice {
+  border: 1px solid black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  border-radius: 10px;
+  font-family: "Kalam", cursive;
+  font-size: xx-large;
+}
+
+.dicebox {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.reroll {
+  display: flex;
+  justify-content: center;
+}
+
+.reroll > button {
+  margin-top: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-family: "Kalam", cursive;
+  font-size: x-large;
+  background-color: lightblue;
+}

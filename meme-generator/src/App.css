@@ -1,0 +1,127 @@
+.header {
+  display: grid;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  height: 150px;
+  font-family: "Karla", sans-serif;
+}
+
+.navbar {
+  margin-left: 50px;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+.navbar > span {
+  margin-left: 20px;
+  margin-right: auto;
+  font-size: xx-large;
+}
+
+.navbar > p {
+  margin-right: 50px;
+}
+
+.memeForm {
+  margin: 20px;
+  margin-top: 100px;
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 150%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.form--input {
+  border-radius: 10px;
+  font-family: "Karla", sans-serif;
+  text-indent: 10px;
+}
+
+.meme-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  display: relative;
+}
+
+.meme {
+  border: 1px solid black;
+  position: relative;
+  height: 450px;
+}
+
+.top-text {
+  position: absolute;
+  font-size: 250%;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.bottom-text {
+  position: absolute;
+  font-size: 250%;
+  top: 800px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.save-button {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.name > label {
+  margin-right: 10px;
+}
+
+.savedList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+}
+
+.show-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.meme-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme-list > div > button {
+  border-radius: 10px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  font-family: "Karla", sans-serif;
+  margin: 5px;
+}

@@ -1,0 +1,79 @@
+.react-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.info--box {
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 300px;
+  width: 700px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > button {
+  width: 200px;
+  margin-left: 240px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.form-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px 20px;
+}
+
+.form-boxes > input {
+  border-radius: 5px;
+}
+
+.description {
+  width: auto;
+  grid-column: 1 / -1;
+  height: 50px;
+  text-wrap: wrap;
+  align-items: start;
+}
+
+.badge {
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 300px;
+  width: 700px;
+}
+
+.banner {
+  background-color: lightgray;
+  padding-top: 5px;
+  padding-left: 5px;
+  height: 20px;
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin: 20px 20px;
+}
+
+.email {
+  grid-column: 1 /-1;
+}
+
+.textbox {
+  border: 2px solid black;
+  grid-column: 1 /-1;
+  height: 100px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}

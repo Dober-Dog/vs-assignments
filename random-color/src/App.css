@@ -1,0 +1,36 @@
+.colorbox {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.code {
+  margin-top: 150px;
+  font-size: large;
+}
+
+.react-box {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: blueviolet;
+  padding: 20px;
+  font-size: 300%;
+}
+
+label {
+  font-size: x-large;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 10px;
+  height: 50px;
+  width: 100px;
+  font-size: large;
+}
