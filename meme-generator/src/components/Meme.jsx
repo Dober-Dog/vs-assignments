@@ -76,6 +76,11 @@ export default function Meme(){
         return (
             <div key={index} className="meme-list">
                 <h2>{index.name}</h2>
+                <div className="meme-box-preview">
+                    <img src={index.url} className="meme-preview" />
+                    <h2 className="top-text-preview">{index.topText}</h2>
+                    <h2 className="bottom-text-preview">{index.bottomText}</h2>
+                </div>
                 <div>
                     <button onClick={() => remove(index)}>Remove Meme</button>
                     <button onClick={() => edit(index)}>Edit Meme</button>
