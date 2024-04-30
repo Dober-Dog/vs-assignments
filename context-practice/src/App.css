@@ -1,0 +1,59 @@
+.light-theme {
+  color: darkblue;
+  background-color: lightgray;
+}
+
+.dark-theme {
+  color: white;
+  background-color: navy;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.light-button{
+  color: forestgreen;
+  background-color: beige;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 50px;
+  font-size: large;
+}
+
+.dark-button {
+  color: goldenrod;
+  background-color: darkgreen;
+  border: 2px solid purple;
+  border-radius: 5px;
+  height: 50px;
+  font-size: large;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.main > h1 {
+  font-size: 500%;
+}
+
+.main > h3 {
+  font-size: xx-large;
+}
+
+.button {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  margin-top: 336px;
+  display: flex;
+  justify-content: center;
+}

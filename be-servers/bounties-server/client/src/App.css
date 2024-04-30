@@ -1,0 +1,61 @@
+.bounty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: gray;
+}
+
+.bounty-buttons {
+  margin: 5px;
+}
+
+.bounty-buttons > button {
+  margin: 5px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bounty-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.bounty-form > input {
+  height: 40px;
+  margin: 5px;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: darkred;
+  color: white;
+  text-align: center;
+}
+
+.bounty-form > button {
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+}
+
+.close-button {
+  margin: 5px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: purple;
+  color: white;
+}

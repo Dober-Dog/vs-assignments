@@ -1,0 +1,89 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: skyblue;
+  padding: 5px 0px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.home > h1 {
+  font-size: 400%;
+}
+
+.get-new {
+  background-image: url("https://banner2.cleanpng.com/20180320/dqw/kisspng-tennis-balls-clip-art-tennis-ball-clipart-picture-5ab1c8d446a110.2312317115216007242893.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 110px;
+  border-radius: 100%;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  font-size: large;
+  cursor: pointer;
+  font-family: "Ribeye", serif;
+}
+
+.info {
+  width: 800px;
+  text-align: center;
+  height: 230px;
+  margin-bottom: 30px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 700px);
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  grid-gap: 5px;
+  margin: 5px 25px;
+  font-size: x-large;
+}
+
+.about > h1 {
+  grid-column: 1 / -1;
+  font-size: 300%;
+}
+
+.about-img-1 {
+  grid-column: 1 / 2;
+  max-width: 100%;
+}
+
+.about-1 {
+  grid-column: 2 / 3;
+  width: 500px;
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+.about-1 > h2 {
+  margin-bottom: 100px;
+  font-size: xx-large;
+}
+
+.about-2 {
+  grid-column: 1 / 2;
+}
+
+.about-img-2 {
+  grid-column: 2 / 3;
+  height: 500px;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
