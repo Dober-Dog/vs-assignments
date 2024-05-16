@@ -1,0 +1,92 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray;
+  margin-top: 5px;
+  color: blue;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.player {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  width: 450px;
+  background-color: white;
+}
+
+.player-buttons {
+  margin: 5px;
+}
+
+.player-buttons > button {
+  margin: 2px;
+  cursor: pointer;
+}
+
+.player-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.player-form > input,
+.player-form > select {
+  flex: 1;
+  margin: 5px;
+}
+
+.player-form > button {
+  cursor: pointer;
+}
+
+.roster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8dcae26a-c54a-4d90-ad3d-5f91936aca9b/d86n9u5-4d13ca3f-7bc4-4925-8468-68e94849d828.png/v1/fill/w_1024,h_577,q_80,strp/new_york_yankees_wallpaper_2_by_hawthorne85_d86n9u5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3IiwicGF0aCI6IlwvZlwvOGRjYWUyNmEtYzU0YS00ZDkwLWFkM2QtNWY5MTkzNmFjYTliXC9kODZuOXU1LTRkMTNjYTNmLTdiYzQtNDkyNS04NDY4LTY4ZTk0ODQ5ZDgyOC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.6a60c_nJv2vxdMQtD4lLCmowtczDENm_ztCE6vn3aGs");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.history > h1 {
+  color: white;
+}
+
+.history > p {
+  color: whitesmoke;
+  padding: 10px;
+  font-size: larger;
+  margin: 30px 80px;
+}
+
+.staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.staff > img {
+  width: 400px;
+}
+
+.staff > h2 {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}

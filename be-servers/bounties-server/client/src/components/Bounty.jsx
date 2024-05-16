@@ -23,6 +23,8 @@ export default function Bounty(props){
                         submit={props.editBounty}
                         btnText= "Apply Changes"
                         _id={props._id}
+                        edit={edit}
+                        setEdit={setEdit}
                     />
                     <button onClick={() => setEdit(prevEdit => !prevEdit)} className="close-button">Close</button>
                 </>

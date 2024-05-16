@@ -25,12 +25,15 @@ export default function App(){
       .catch(err => console.log(err))
   }
 
-  function editMovie(updates, movieID){
-    axios.put(`/movies/${movieID}`, updates)
-      .then(res => {
-        setMovies(prevMovies => prevMovies.map(movie => movie._id !== movieID ? movie : res.data))
-      })
+  function handleFilter(e){
+    const { value } = e.target
+    if(value !== 'null'){
+      axios.get(`/movies/search/genre?genre=${value}`)
+      .then(res => setMovies(res.data))
       .catch(err => console.log(err))
+    } else {
+      getMovies()
+    }
   }
 
   useEffect(() => {
@@ -40,11 +43,16 @@ export default function App(){
   return(
     <div>
       <AddMovieForm submit={addMovie} btnText="Add Movie"/>
+      <h3>Filter by Genre</h3>
+      <select onChange={handleFilter}>
+        <option value="null">- Select a Genre -</option>
+        <option value="action">Action</option>
+        <option value="fantasy">Fantasy</option>
+      </select>
       { movies.map(movie => 
         <Movie {...movie} 
           key={movie.title}
           deleteMovie={deleteMovie}
-          editMovie={editMovie}
         />)}
     </div>
   )

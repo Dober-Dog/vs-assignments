@@ -17,7 +17,7 @@ movieRouter.route("/")
     .post(async (req, res, next) => {
         try {
             const newMovie = new Movie(req.body)
-            await newMovie.save();
+            await newMovie.save()
             res.status(201).send(newMovie)
         } catch (err) {
             res.status(500)
@@ -25,42 +25,48 @@ movieRouter.route("/")
         }
     });
 
-movieRouter.get("/:movieId", (req, res, next) => {
-    const movieId = req.params.movieId
-    const foundMovie = movies.find(movie => movie._id === movieId)
-    if(!foundMovie){
-        const error = new Error(`The item with id of ${movieId} was not found.`)
-        res.status(500)
-        return next(error)
+movieRouter.get("/:movieId", async (req, res, next) => {
+    try {
+        const result = await Movie.findOne({ _id: req.params.movieId })
+        res.status(200).send(result)
+    } catch (err) {
+        res.status(404)
+        return next(err)
     }
-    res.status(200).send(foundMovie)
 })
 
 
-movieRouter.get("/search/genre", (req, res, next) => {
-    const genre = req.query.genre
-    if(!genre){
+movieRouter.get("/search/genre", async (req, res, next) => {
+    try {
+        const result = await Movie.find({ genre: req.query.genre })
+        res.status(200).send(result)
+    } catch (err) {
         res.status(500)
-        const error = new Error("Genre must be included.")
-        return next(error)
+        return next(err)
     }
-    const filteredMovies = movies.filter(movie => movie.genre === genre)
-    res.status(200).send(filteredMovies)
 })
 
-movieRouter.delete("/:movieId", (req, res) => {
-    const movieId = req.params.movieId
-    const movieIndex = movies.findIndex(movie => movie._id === movieId)
-    movies.splice(movieIndex, 1)
-    res.status(201).send("Successfully deleted movie")
-})
+movieRouter.delete("/:movieId", async (req, res, next) => {
+    try {
+        const result = await Movie.findByIdAndDelete({ _id: req.params.movieId })
+        res.status(200).send(`Successfully deleted ${result.title} from list`)
+    } catch (err) {
+        res.status(500)
+        return next(err)
+    }
+});
 
-movieRouter.put("/:movieId", (req, res) => {
-    const movieId = req.params.movieId
-    const updateObject = req.body
-    const movieIndex = movies.findIndex(movie => movie._id === movieId)
-    const updatedMovie = Object.assign(movies[movieIndex], updateObject)
-    res.status(201).send(updatedMovie)
+movieRouter.put("/:movieId", async (req, res, next) => {
+    try {
+        const update = req.body
+        const result = await Movie.findOneAndUpdate({ _id: req.params.movieId }, update, {
+            new: true
+        })
+        res.status(201).send(result)
+    } catch (err) {
+        res.status(500)
+        return next(err)
+    }
 })
 
 

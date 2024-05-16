@@ -1,10 +1,6 @@
-import axios from "axios"
-import { useContext, useState } from "react"
-import { BountyContext } from "./bountyContext"
-import { v4 as uuidv4 } from "uuid"
+import { useState } from "react"
 
 export default function BountyForm(props){
-    const { setBounties } = useContext(BountyContext)
 
     const initInputs = {
         target: props.target || "",
@@ -24,9 +20,9 @@ export default function BountyForm(props){
 
     function handleSubmit(e){
         e.preventDefault()
-        inputs._id = uuidv4()
         props.submit(inputs, props._id)
         setInputs(initInputs)
+        props.edit !== undefined && props.setEdit(!props.edit)
     }
 
     return (
